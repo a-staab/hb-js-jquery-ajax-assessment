@@ -303,7 +303,7 @@ $("#play-guessing-game").on('click', playGame);
   }
   //Prevent page reload, send submitted data to server, and call showTRexResults
   //with results returned by the route
-  function tallyTheDead(evt, result) {
+  function tallyTheDead(evt) {
     evt.preventDefault();
     var formEntries = $("#t-rex-form").serialize();
     $.post("/t-rex-attack.json", 
